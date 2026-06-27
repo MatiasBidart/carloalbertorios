@@ -329,7 +329,7 @@ function Services() {
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+            transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1],}}
             className="text-center mb-16"
           >
             <p className="text-[#B8965A] text-xs tracking-[0.3em] uppercase mb-4" style={{ fontFamily: "'Lato', sans-serif" }}>
@@ -345,16 +345,16 @@ function Services() {
           </motion.div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {services.map(({ icon, title, description }, i) => (
+            {services.map(({ id, icon, title, description }, i) => (
               <motion.div
                 key={title}
                 initial={{ opacity: 0, y: 20 }}
                 animate={inView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.5, delay: i * 0.07, ease: [0.22, 1, 0.36, 1] }}
+                transition={{ duration: 0.5, delay: i * 0.07, ease: [0.22, 1, 0.36, 1]}}
                 className="group bg-[#FAF7F2] p-8 border border-[#1C2B4A] hover:border-[#B8965A]/40 hover:shadow-lg transition-all duration-300 cursor-default"
               >
                 <div className="mb-5 w-10 h-10 flex items-center justify-center border border-[#1C2B4A] group-hover:border-[#B8965A]/50 group-hover:bg-[#B8965A]/5 transition-all duration-300">
-                  <div id={i} />
+                  <div id={id} />
                   {icon}
                 </div>
                 <h3
