@@ -4,7 +4,6 @@ import { useState, useEffect, useRef } from "react";
 import { motion } from "motion/react";
 
 
-
 const WHATSAPP_NUMBER = "5491100000000";
 const WHATSAPP_MESSAGE = "Hola Sr. Ríos, me gustaría consultar sobre sus servicios legales.";
 
@@ -26,7 +25,7 @@ function useInView(threshold = 0.15) {
 
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
-  visible: (delay = 0) => ({ opacity: 1, y: 0, transition: { duration: 0.7, delay, ease: [0.22, 1, 0.36, 1] } }),
+  visible: (delay = 0) => ({ opacity: 1, y: 0, transition: { duration: 0.7, delay, ease: [0.22, 1, 0.36, 1] as const, } }),
 };
 
 const services = [
