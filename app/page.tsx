@@ -283,7 +283,7 @@ function About() {
           >
             <div className="relative overflow-hidden aspect-[4/5] max-w-sm mx-auto lg:mx-0">
               <img
-                src="https://i.postimg.cc/Nj32kg0C/Carlos-Rios.png"
+                src="https://i.postimg.cc/ydGYMcFb/Whats-App-Image-2026-06-26-at-18-38-36.jpg"
                 alt="Sr. Carlos Alberto Ríos, Abogado"
                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
               />
