@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from "react";
 import { motion } from "motion/react";
 
 
-const WHATSAPP_NUMBER = "5491100000000";
+const WHATSAPP_NUMBER = "5491134587963";
 const WHATSAPP_MESSAGE = "Hola Sr. Ríos, me gustaría consultar sobre sus servicios legales.";
 
 function useInView(threshold = 0.15) {
@@ -230,10 +230,10 @@ function Hero() {
             animate="visible"
             custom={0.45}
             variants={fadeUp}
-            className="text-[#F4EFE6]/70 text-lg font-light leading-relaxed max-w-md mb-10"
+            className="text-[#F4EFE6]/70 font-light leading-relaxed max-w-md mb-10"
             style={{ fontFamily: "'Lato', sans-serif" }}
           >
-            <p className="font-bold">Abogado penalista</p> Diplomado en DDHH<p className="text-[#B8965A] italic">(Universidad del Delta)</p>
+            <p className="font-bold">Abogado penalista</p><p className="text-[#B8965A] italic">(Universidad de Morón)</p> Diplomado en DDHH y garantías legales<p className="text-[#B8965A] italic">(Universidad del Delta)</p>
             diplomado en Niñez y Adolescencia <p className="text-[#B8965A] italic">(Universidad Nacional Del Oeste)</p>
           </motion.div>
 
@@ -319,14 +319,14 @@ function About() {
               <p>
                 Soy abogado penalista, orientado a Defensa Penal y Trámites Legales. Además de la defensa técnica, mi enfoque siempre contempla el asesoramiento y seguimiento; manteniendo buena comunicación con el cliente.
               </p>
-              <p>
-                📍 Zona Oeste: Moreno, Merlo, etc.
+              <p className="font-bold opacity-90 text-sm">
+                📍 Zona Oeste: Moreno, Merlo, General Rodriguez, San Martín, etc.
               </p>
             </div>
             <div className="mt-8 grid grid-cols-2 gap-6">
               {[
-                { num: "500+", label: "Casos resueltos" },
-                { num: "98%", label: "Clientes satisfechos" },
+                { num: "24 hs", label: "Asistencia Legal" },
+                { num: "🎯", label: "Matricula Federal" },
               ].map(({ num, label }) => (
                 <div key={label} className="border-l-2 border-[#B8965A] pl-4">
                   <p className="text-2xl font-semibold text-[#1C2B4A]" style={{ fontFamily: "'Playfair Display', serif" }}>
@@ -403,6 +403,72 @@ function Services() {
     </section>
   );
 }
+// ---------------------
+function LegalBanner() {
+  const { ref, inView } = useInView(0.3);
+  return (
+    <section className="relative overflow-hidden" style={{ background: "linear-gradient(110deg, #1C2B4A 0%, #243560 50%, #1C2B4A 100%)" }}>
+      {/* Subtle diagonal lines texture */}
+      <div className="absolute inset-0 opacity-5" style={{
+        backgroundImage: "repeating-linear-gradient(45deg, #B8965A 0px, #B8965A 1px, transparent 1px, transparent 18px)",
+      }} />
+
+      {/* Gold accent bar top */}
+      <div className="absolute top-0 left-0 right-0 h-px bg-[#B8965A] opacity-40" />
+
+      <div className="relative z-10 max-w-6xl mx-auto px-6 py-12">
+        <motion.div
+          ref={ref}
+          initial={{ opacity: 0, y: 16 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+          className="flex flex-col md:flex-row items-center justify-between gap-6"
+        >
+          <div className="flex items-center gap-6">
+            <div className="hidden sm:flex w-12 h-12 items-center justify-center border border-[#B8965A]/40 shrink-0 text-[#B8965A] text-lg">
+              {/* <Scale size={20} className="text-[#B8965A]" strokeWidth={1.5} /> */}
+              ⚖
+            </div>
+            <div>
+              <h3
+                className="text-[#F4EFE6] text-xl sm:text-2xl leading-tight"
+                style={{ fontFamily: "'Playfair Display', serif", fontWeight: 400 }}
+              >
+                Asistencia legal{" "}
+                <em className="italic text-[#B8965A]">24 hs.</em>
+              </h3>
+              <p
+                className="text-[#F4EFE6]/55 text-xs tracking-[0.2em] uppercase mt-1.5"
+                style={{ fontFamily: "'Lato', sans-serif", fontWeight: 300 }}
+              >
+                Matrícula Federal · CABA · Provincia de Buenos Aires
+              </p>
+            </div>
+          </div>
+
+          {/* <div className="flex items-center gap-3 shrink-0">
+            <div className="hidden md:block w-px h-10 bg-[#B8965A]/20" />
+            <a
+              href={`https://wa.me/5491100000000?text=${encodeURIComponent("Hola Sr. Ríos, necesito asistencia legal urgente.")}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2.5 px-6 py-3 border border-[#B8965A]/50 text-[#B8965A] text-xs tracking-widest uppercase font-light hover:bg-[#B8965A] hover:text-[#B8965A]-foreground hover:border-[#B8965A] transition-all duration-300"
+              style={{ fontFamily: "'Lato', sans-serif" }}
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-[#B8965A] animate-pulse" />
+              Contactar ahora
+            </a>
+          </div> */}
+        </motion.div>
+      </div>
+
+      {/* Gold [#B8965A] bar bottom */}
+      <div className="absolute bottom-0 left-0 right-0 h-px bg-[#B8965A] opacity-40" />
+    </section>
+  );
+}
+
+// ---------------------
 
 function Quote() {
   const { ref, inView } = useInView();
@@ -485,13 +551,13 @@ function Contact() {
             </h2>
             <div className="w-12 h-px bg-[#B8965A] mb-8" />
             <p className="text-[#1C2B4A]/70 font-light leading-relaxed mb-10 max-w-md w-full" style={{ fontFamily: "'Lato', sans-serif" }}>
-              La primera consulta es gratuita y sin compromiso. Cuénteme su situación y le daré una evaluación honesta sobre las opciones disponibles.
+               Asistencia legal las 24 horas, Matricula Federal, Caba y Provincia de Buenos Aires.
             </p>
             <div className="space-y-4">
               {[
-                { label: "Teléfono / WhatsApp", value: "+54 9 11 0000-0000" },
-                { label: "Correo electrónico", value: "consultas@carlosrios.com.ar" },
-                { label: "Dirección", value: "Av. Corrientes 1234, Piso 8, CABA" },
+                { label: "Teléfono / WhatsApp", value: "+54 9 1134587963" },
+                { label: "Correo electrónico", value: "drcarlosalbertorios79@gmail.com" },
+                { label: "Ubicación", value: "Zona Oeste, GBA." },
                 { label: "Horario de atención", value: "Lunes a Viernes, 9:00 – 18:00 hs" },
               ].map(({ label, value }) => (
 <div key={label} className="flex flex-col sm:flex-row gap-2 sm:gap-4">
@@ -526,7 +592,7 @@ function Contact() {
               href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center gap-3 w-full py-4 bg-[#25D366] text-white text-sm tracking-widest uppercase font-light hover:bg-[#1ebe5a] hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300"
+              className="flex items-center justify-center gap-3 w-full py-4 px-2 bg-[#25D366] text-white text-xs md:text-sm tracking-widest uppercase font-light hover:bg-[#1ebe5a] hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300"
               style={{ fontFamily: "'Lato', sans-serif" }}
             >
               <WhatsAppIcon />
@@ -535,8 +601,8 @@ function Contact() {
             <div className="mt-6 pt-6 border-t border-[#1C2B4A]">
               <p className="text-xs text-[#E4DDD1]-[#1C2B4A] font-light text-center" style={{ fontFamily: "'Lato', sans-serif" }}>
                 También puede escribir a{" "}
-                <a href="mailto:consultas@carlosrios.com.ar" className="text-[#B8965A] hover:underline break-all">
-                  consultas@carlosrios.com.ar
+                <a href="mailto:drcarlosalbertorios79@gmail.com" className="text-[#B8965A] hover:underline break-all">
+                  drcarlosalbertorios79@gmail.com
                 </a>
               </p>
             </div>
@@ -552,7 +618,7 @@ function Footer() {
     <footer className="bg-[#1C2B4A] py-10 border-t border-[#F4EFE6]/10">
       <div className="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
         <p className="text-[#F4EFE6]/40 text-xs font-light" style={{ fontFamily: "'Lato', sans-serif" }}>
-          © 2024 Carlos Alberto Ríos · Todos los derechos reservados
+          © 2026 Carlos Alberto Ríos · Todos los derechos reservados
         </p>
         <p className="text-[#F4EFE6]/40 text-xs font-light" style={{ fontFamily: "'Lato', sans-serif" }}>
           Mat. Prof. CPACF T° 000 F° 000
@@ -595,6 +661,7 @@ export default function Page() {
       <Hero />
       <About />
       <Services />
+      <LegalBanner/>
       <Quote />
       <Contact />
       <Footer />
