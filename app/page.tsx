@@ -30,35 +30,62 @@ const fadeUp = {
 
 const services = [
   {
-    id: "1",
-    icon: (<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-scale-icon lucide-scale"><path d="M12 3v18"/><path d="m19 8 3 8a5 5 0 0 1-6 0zV7"/><path d="M3 7h1a17 17 0 0 0 8-2 17 17 0 0 0 8 2h1"/><path d="m5 8 3 8a5 5 0 0 1-6 0zV7"/><path d="M7 21h10"/></svg>),
-    title: "Derecho Civil",
-    description: "Asesoramiento integral en contratos, obligaciones, daños y perjuicios. Representación en litigios civiles con enfoque estratégico y resolución eficiente.",
+    id:"0",
+    icon:  (<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-users-icon lucide-users"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><path d="M16 3.128a4 4 0 0 1 0 7.744"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><circle cx="9" cy="7" r="4"/></svg>),
+    title: "DELITOS CONTRA LAS PERSONAS",
+    description: (<div>Defensa penal ante amenazas, denuncias injustas o exageradas o <p className="text-purple-800 font-bold ">violencia de género.</p></div>)
   },
   {
-    id:"2",
+    id:"7",
     icon: (<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-house-icon lucide-house"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>),
-    title: "Derecho Inmobiliario",
-    description: "Compraventa, locaciones, propiedad horizontal y litigios sobre inmuebles. Seguridad jurídica en cada operación del mercado inmobiliario.",
+    title:"DELITO CONTRA LA PROPIEDAD",
+    description:"Causas por robo, usurpación, estafas, etc. Confilctos patrimoniales."
   },
   {
-    id:"3",
-    icon: (<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-users-icon lucide-users"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><path d="M16 3.128a4 4 0 0 1 0 7.744"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><circle cx="9" cy="7" r="4"/></svg>),
-    title: "Derecho de Familia",
-    description: "Divorcios, alimentos, guarda y régimen de visitas. Mediación familiar y procesos sucesorios. Acompañamiento profesional en momentos sensibles.",
+    id:"8",
+    icon: (<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-scale-icon lucide-scale"><path d="M12 3v18"/><path d="m19 8 3 8a5 5 0 0 1-6 0zV7"/><path d="M3 7h1a17 17 0 0 0 8-2 17 17 0 0 0 8 2h1"/><path d="m5 8 3 8a5 5 0 0 1-6 0zV7"/><path d="M7 21h10"/></svg>),
+    title:"DELITOS ECONÓMICOS Y FINANCIEROS.",
+    description:"Empresariales, defraudaciones y conflictos penales corporativos."
+  }
+];
+
+const penalServices = [
+  {
+    id:"0",
+    icon:  (<img src="https://abogadopenalistagonzalezguerra.com.ar/assets/img/detenciones-cordoba.png" alt="" className="img-fluid"></img>),
+    title: "DETENCIONES",
+    description:"Asistencia en detenciones y flagrancia.",
   },
   {
-    id:"4",
-    icon: (<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-file-text-icon lucide-file-text"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"/><path d="M14 2v5a1 1 0 0 0 1 1h5"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg>),
-    title: "Contratos y Negociaciones",
-    description: "Redacción, revisión y negociación de contratos civiles y comerciales. Cláusulas precisas que anticipan conflictos y protegen sus intereses.",
+    id:"7",
+    icon:(<img src="https://abogadopenalistagonzalezguerra.com.ar/assets/img/excarcelaciones-cordoba.png" alt="" className="img-fluid"/>),
+    title:"EXCARCELACIONES Y EXIMICIONES.",
+    description:"Gestión y defensa ante medidas."
   },
   {
-    id:"5",
-    icon: (<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-shield-icon lucide-shield"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg>),
-    title: "Derecho Laboral",
-    description: "Defensa de empleadores y empleados ante conflictos laborales, despidos y accidentes de trabajo. Cumplimiento normativo y gestión preventiva.",
+    id:"8",
+    icon: (<img src="https://abogadopenalistagonzalezguerra.com.ar/assets/img/estupefacientes-cordoba.png" alt="" className="img-fluid"></img>),
+    title:"DELITOS ESTUPEFACIENTES.",
+    description:"Asistencia penal en causas vinculadas a estupefacientes. "
   },
+  {
+    id:"9",
+    icon:(<img src="https://abogadopenalistagonzalezguerra.com.ar/assets/img/querellas-penales-cordoba.png" alt="" className="img-fluid"></img>),
+    title:"QUERELLAS PENALES.",
+    description:"Representación legal para querellas."
+  },
+  {
+    id:"10",
+    icon:(<img src="https://abogadopenalistagonzalezguerra.com.ar/assets/img/ejecucion-penal-cordoba.png" alt="" className="img-fluid"></img>),
+    title:"EJECUCIÓN PENAL.",
+    description: "Gestión y trámite de salidas transitorias, libertad condicional y otros beneficios penitenciarios."
+  },
+  {
+    id:"11",
+    icon:(<img src="https://abogadopenalistagonzalezguerra.com.ar/assets/img/delitos-culposos-cordoba.png" alt="" className="img-fluid"></img>),
+    title:"DELITOS CULPOSOS.",
+    description:"Asesoría legal y defensa técnica en el procedimiento."
+  }
 ];
 
 const navLinks = [
@@ -198,7 +225,7 @@ function Hero() {
             className="w-16 h-px bg-[#B8965A] mb-8"
           />
 
-          <motion.p
+          <motion.div
             initial="hidden"
             animate="visible"
             custom={0.45}
@@ -206,8 +233,9 @@ function Hero() {
             className="text-[#F4EFE6]/70 text-lg font-light leading-relaxed max-w-md mb-10"
             style={{ fontFamily: "'Lato', sans-serif" }}
           >
-            Experiencia defendiendo los derechos de personas y empresas. Claridad jurídica, estrategia y compromiso en cada caso.
-          </motion.p>
+            <p className="font-bold">Abogado penalista</p> Diplomado en DDHH<p className="text-[#B8965A] italic">(Universidad del Delta)</p>
+            diplomado en Niñez y Adolescencia <p className="text-[#B8965A] italic">(Universidad Nacional Del Oeste)</p>
+          </motion.div>
 
           <motion.div
             initial="hidden"
@@ -221,7 +249,7 @@ function Hero() {
               className="px-8 py-3.5 bg-[#B8965A] text-[#B8965A]-[#1C2B4A] text-sm tracking-widest uppercase font-light hover:bg-[#B8965A]/90 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300"
               style={{ fontFamily: "'Lato', sans-serif" }}
             >
-              Consulta gratuita
+              Consultar
             </button>
             <button
               onClick={() => document.querySelector("#servicios")?.scrollIntoView({ behavior: "smooth" })}
@@ -289,13 +317,10 @@ function About() {
             <div className="w-12 h-px bg-[#B8965A] mb-8" />
             <div className="space-y-4 text-[#1C2B4A]/70 font-light leading-relaxed" style={{ fontFamily: "'Lato', sans-serif" }}>
               <p>
-                Soy abogado egresado de la Universidad de Buenos Aires con especialización en Derecho Civil y Comercial. A lo largo de mi carrera he representado tanto a particulares como a empresas en causas de diversa complejidad, siempre con rigor técnico y vocación de servicio.
+                Soy abogado penalista, orientado a Defensa Penal y Trámites Legales. Además de la defensa técnica, mi enfoque siempre contempla el asesoramiento y seguimiento; manteniendo buena comunicación con el cliente.
               </p>
               <p>
-                Mi enfoque combina una preparación académica sólida con un conocimiento profundo de la realidad jurídica argentina. Creo en la comunicación clara: explico cada etapa del proceso para que usted tome decisiones informadas.
-              </p>
-              <p>
-                Con sede en la Ciudad de Buenos Aires, atiendo presencialmente y de manera remota en toda la República Argentina.
+                📍 Zona Oeste: Moreno, Merlo, etc.
               </p>
             </div>
             <div className="mt-8 grid grid-cols-2 gap-6">
@@ -323,8 +348,9 @@ function About() {
 function Services() {
   const { ref, inView } = useInView(0.05);
   return (
-    <section id="servicios" className="py-28 bg-[#E8E0D0]">
-      <div className="max-w-6xl mx-auto px-6">
+    <section id="servicios" className="p-6 bg-[url(https://abogadopenalistagonzalezguerra.com.ar/assets/img/hero-guerra23.png)]">
+      <div className="py-28 rounded bg-gradient-to-t from-[#F4EFE6] to-[#F4EFE6]/40">
+             <div className="max-w-6xl mx-auto px-6">
         <div ref={ref}>
           <motion.div
             initial={{ opacity: 0, y: 24 }}
@@ -341,6 +367,7 @@ function Services() {
             >
               Servicios <em className="italic text-[#B8965A]">legales</em>
             </h2>
+            <p className="text-[#1C2B4A] text-xs mt-6">Cada causa es abordada con criterio profesional, seriedad y responsabilidad, evaluando la prueba, las circunstancias del hecho y la situación personal del imputado para definir la mejor estrategia de defensa.</p>
             <div className="w-12 h-px bg-[#B8965A] mx-auto mt-6" />
           </motion.div>
 
@@ -353,7 +380,7 @@ function Services() {
                 transition={{ duration: 0.5, delay: i * 0.07, ease: [0.22, 1, 0.36, 1]}}
                 className="group bg-[#FAF7F2] p-8 border border-[#1C2B4A] hover:border-[#B8965A]/40 hover:shadow-lg transition-all duration-300 cursor-default"
               >
-                <div className="mb-5 w-10 h-10 flex items-center justify-center border border-[#1C2B4A] group-hover:border-[#B8965A]/50 group-hover:bg-[#B8965A]/5 transition-all duration-300">
+                <div className="mb-5 w-10 h-10 flex items-center justify-center border bg-gradient-to-l from-[#B8965A]/20 to-[#B8965A]/10 border-[#1C2B4A] group-hover:border-[#B8965A]/50 group-hover:bg-[#1C2B4A]/5 transition-all duration-300">
                   <div id={id} />
                   {icon}
                 </div>
@@ -363,13 +390,15 @@ function Services() {
                 >
                   {title}
                 </h3>
-                <p className="text-[#1C2B4A]/60 text-sm leading-relaxed font-light" style={{ fontFamily: "'Lato', sans-serif" }}>
+                <div className="text-[#1C2B4A]/60 text-sm leading-relaxed font-light" style={{ fontFamily: "'Lato', sans-serif" }}>
                   {description}
-                </p>
+                </div>
               </motion.div>
             ))}
           </div>
         </div>
+      </div>
+
       </div>
     </section>
   );
@@ -378,32 +407,56 @@ function Services() {
 function Quote() {
   const { ref, inView } = useInView();
   return (
-    <section className="py-24 bg-[#1C2B4A] relative overflow-hidden">
+    <section className="p-2 bg-[#1C2B4A] relative overflow-hidden">
       <div className="absolute inset-0 opacity-10">
         <img
-          src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1600&h=600&fit=crop&auto=format"
+          src="https://insyde.org.mx/wp-content/uploads/2019/07/1-1200x600.png"
           alt=""
           className="w-full h-full object-cover"
         />
       </div>
+      <div className="m-3 md:m-6 p-4 md:p-10 rounded bg-gradient-to-t from-black to-black/40 md:p-2">
       <motion.div
         ref={ref}
         initial={{ opacity: 0, y: 24 }}
         animate={inView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-        className="relative z-10 max-w-3xl mx-auto px-6 text-center"
+        className="relative z-10 max-w-6xl mx-auto px-4 md:px-6 text-center"
       >
-        <div className="text-[#B8965A] text-6xl leading-none mb-4 opacity-40" style={{ fontFamily: "'Playfair Display', serif" }}>"</div>
-        <blockquote
-          className="text-[#F4EFE6]/90 leading-relaxed mb-6"
-          style={{ fontFamily: "'Playfair Display', serif", fontSize: "clamp(1.2rem, 3vw, 1.6rem)", fontWeight: 400, fontStyle: "italic" }}
-        >
-          Aquí va una breve declaración o una anotación a destacar en forma de banner.
-        </blockquote>
-        <p className="text-[#B8965A] text-xs tracking-[0.3em] uppercase" style={{ fontFamily: "'Lato', sans-serif" }}>
-          — Carlos Alberto Ríos
-        </p>
+         <h2
+              className="text-[#F4EFE6]/90 leading-tight mt-6 mb-6"
+              style={{ fontFamily: "'Playfair Display', serif", fontSize: "clamp(2rem, 4vw, 2.8rem)", fontWeight: 400 }}
+            >
+              Servicios <em className="italic text-[#B8965A]">penales</em>
+            </h2>
+            <div className="w-12 h-px bg-[#B8965A] mx-auto mt-2 mb-6" />
+             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 items-stretch">
+            {penalServices.map(({ id, icon, title, description }, i) => (
+              <motion.div
+                key={title}
+                initial={{ opacity: 0, y: 20 }}
+                animate={inView ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.5, delay: i * 0.07, ease: [0.22, 1, 0.36, 1]}}
+                className="group bg-[#1C2B4A] p-8 border border-[#FAF7F2]/40 hover:border-[#B8965A]/40 hover:shadow-lg transition-all duration-300 cursor-default flex flex-col items-center"
+              >
+                <div className="mb-5 max-w-10 max-h-10 flex items-center justify-center border bg-gradient-to-l from-[#B8965A]/20 to-[#B8965A]/10 border-[#1C2B4A] group-hover:border-[#B8965A]/50 group-hover:bg-[#1C2B4A]/5 transition-all duration-300">
+                  <div id={id} />
+                  {icon}
+                </div>
+                <h3
+                  className="text-[#FAF7F2] mb-3 text-lg font-medium group-hover:text-[#B8965A] transition-colors duration-300"
+                  style={{ fontFamily: "'Playfair Display', serif", fontWeight: 500 }}
+                >
+                  {title}
+                </h3>
+                <div className="text-[#FAF7F2]/60 text-sm leading-relaxed font-light" style={{ fontFamily: "'Lato', sans-serif" }}>
+                  {description}
+                </div>
+              </motion.div>
+            ))}
+          </div>
       </motion.div>
+      </div>
     </section>
   );
 }
