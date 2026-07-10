@@ -233,7 +233,7 @@ function Hero() {
             className="text-[#F4EFE6]/70 font-light leading-relaxed max-w-md mb-10"
             style={{ fontFamily: "'Lato', sans-serif" }}
           >
-            <p className="font-bold">Abogado penalista</p><p className="text-[#B8965A] italic">(Universidad de Morón)</p> Diplomado en DDHH y garantías legales<p className="text-[#B8965A] italic">(Universidad del Delta)</p>
+            <p className="font-bold">Abogado penalista</p><p className="text-[#B8965A] italic">(Universidad de Morón)</p> Diplomado en DDHH y garantías judiciales<p className="text-[#B8965A] italic">(Universidad del Delta)</p>
             diplomado en Niñez y Adolescencia <p className="text-[#B8965A] italic">(Universidad Nacional Del Oeste)</p>
           </motion.div>
 
